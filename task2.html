@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="task-entry">
+            <label for="taskInput">Task:</label>
+            <input type="text" id="taskInput" placeholder="Enter new task">
+            
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate">
+            
+            <label for="label">Label:</label>
+            <input type="text" id="label" placeholder="Enter label (e.g., Work, Personal)">
+            
+            <button id="addTaskBtn">
+                <img src="images/add.png" alt="Add Task">
+            </button>
+        </div>
+        <div class="task-list">
+            <h2>Tasks</h2>
+            <ul id="tasks">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
